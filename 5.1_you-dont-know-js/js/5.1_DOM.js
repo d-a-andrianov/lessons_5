@@ -29,3 +29,18 @@ itemTitle[2].after(propsList[4]);
 // из списка `Асинхронная обработка и оптимизация`
 console.log(propsItemTwo);
 propsItemTwo[7].after(propsItemTwo[8], (propsItemTwo[9]));
+
+// перенос заголовков карточек
+// перед 2-ым списком вставить 3-ий заговолок
+propsList[2].before(itemTitle[3]);
+
+// перед 5-ым списком вставить 1-ий заговолок
+propsList[5].before(itemTitle[1]);
+
+// перед 3-ым списком вставить 4-ий заговолок
+propsList[3].before(itemTitle[4]);
+
+// заменить текст в 3 заголовке
+itemTitle[2].textContent = ('This и прототипы объектов');
+
+
