@@ -6,7 +6,7 @@ const propsItemFive = document.querySelectorAll('.props__item_five');
 const propsList = document.querySelectorAll('.props__list');
 const itemTitle = document.querySelectorAll('.item__title');
 const propsItemTwo = document.querySelectorAll('.props__item_two');
-const ads = document.querySelectorAll('.ads');
+const ads = document.querySelector('.ads');
 
 
 // перенос большой карточки
@@ -45,6 +45,6 @@ propsList[3].before(itemTitle[4]);
 itemTitle[2].textContent = ('This и прототипы объектов');
 
 // удалить рекламу
-ads[0].remove();
+ads.remove();
 
 
